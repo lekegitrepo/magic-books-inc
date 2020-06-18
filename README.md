@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://react-magic-calculator.herokuapp.com/)
+[Live Demo Link](https://magic-books-inc.herokuapp.com/)
 
 ## Installation
 
