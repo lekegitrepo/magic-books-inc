@@ -12,26 +12,28 @@ class BooksForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange = ({ target }) => {
+  handleChange({ target }) {
     this.setState({ title: target.value });
-  };
+  }
 
-  handleSelect = ({ target }) => {
+  handleSelect({ target }) {
     this.setState({ category: target.value });
-  };
+  }
 
-  handleSubmit = () => 'full implementation in the next milestone';
+  handleSubmit() {
+    return 'full implementation in the next milestone';
+  }
 
   render() {
     const CATEGORIES = [
-    'Action',
-    'Biography',
-    'History',
-    'Horror',
-    'Kids',
-    'Learning',
-    'Sci-Fi'
-  ];
+      'Action',
+      'Biography',
+      'History',
+      'Horror',
+      'Kids',
+      'Learning',
+      'Sci-Fi',
+    ];
 
     const { title, category } = this.state;
     return (
