@@ -1,5 +1,5 @@
-const addBook = book => ({ type: 'ADD_BOOK', book, });
+const createBook = book => ({ type: 'CREATE_BOOK', book, });
 
-const deleteBook = book => ({ type: 'DELETE_BOOK', book, });
+const removeBook = book => ({ type: 'REMOVE_BOOK', book, });
 
-export { addBook, deleteBook };
+export { createBook, removeBook };
