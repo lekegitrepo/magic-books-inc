@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 
 class BooksForm extends React.Component {
@@ -9,7 +10,6 @@ class BooksForm extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSelect = this.handleSelect.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange({ target }) {
@@ -18,10 +18,6 @@ class BooksForm extends React.Component {
 
   handleSelect({ target }) {
     this.setState({ category: target.value });
-  }
-
-  handleSubmit() {
-    return 'full implementation in the next milestone';
   }
 
   render() {
@@ -37,7 +33,7 @@ class BooksForm extends React.Component {
 
     const { title, category } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form>
         <input type="text" name="title" value={title} onChange={this.handleChange} />
         <select name="category" onChange={this.handleSelect} value={category}>
           {CATEGORIES.map((cat, i) => (
