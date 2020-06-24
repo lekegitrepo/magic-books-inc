@@ -11,10 +11,10 @@ const Book = ({ book: { id, title, category } }) => (
 
 Book.propTypes = {
   book: PropTypes.shape({
-  	id: PropTypes.string.isRequired,
-  	title: PropTypes.string.isRequired,
-  	category: PropTypes.string.isRequired,
-  }),
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Book;
