@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 
 class BooksForm extends React.Component {
@@ -36,8 +35,8 @@ class BooksForm extends React.Component {
       <form>
         <input type="text" name="title" value={title} onChange={this.handleChange} />
         <select name="category" onChange={this.handleSelect} value={category}>
-          {CATEGORIES.map((cat, i) => (
-            <option key={i} value={cat}>
+          {CATEGORIES.map((cat) => (
+            <option value={cat}>
               {cat}
             </option>
           ))}
