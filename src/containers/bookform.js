@@ -11,8 +11,8 @@ class BooksForm extends React.Component {
     this.handleSelect = this.handleSelect.bind(this);
   }
 
-  handleChange({ target }) {
-    this.setState({ title: target.value });
+  handleChange(target) {
+    this.setState({ target: target.value });
   }
 
   handleSelect({ target }) {
@@ -34,7 +34,7 @@ class BooksForm extends React.Component {
     return (
       <form>
         <input type="text" name="title" value={title} onChange={this.handleChange} placeholder="Name of the book" />
-        <select name="category" onChange={this.handleSelect} value={category}>
+        <select name="category" onChange={this.handleChange} value={category}>
           {CATEGORIES.map(cat => (
             <option key={cat} value={cat}>
               {cat}
