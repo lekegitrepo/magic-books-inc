@@ -1,4 +1,6 @@
 import React from 'react';
+import { v4 } from 'uuid';
+import { createBook } from '../actions/index';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -8,15 +10,18 @@ class BooksForm extends React.Component {
       category: '',
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleSelect = this.handleSelect.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(target) {
-    this.setState({ target: target.value });
+  handleChange({ target: { name, value} }) {
+    this.setState({ [name]: value });
   }
 
-  handleSelect({ target }) {
-    this.setState({ category: target.value });
+  handleSubmit(e) {
+    e.preventDefault();
+    const book = { ...this.state, id: v4()};
+    createBook(book);
+    this.setState({ title: '', category: ''});
   }
 
   render() {
@@ -32,7 +37,7 @@ class BooksForm extends React.Component {
 
     const { title, category } = this.state;
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input type="text" name="title" value={title} onChange={this.handleChange} placeholder="Name of the book" />
         <select name="category" onChange={this.handleChange} value={category}>
           {CATEGORIES.map(cat => (
