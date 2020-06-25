@@ -20,6 +20,7 @@ class BooksForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const book = { ...this.state, id: v4()};
+    const { createBook } = this.props;
     createBook(book);
     this.setState({ title: '', category: ''});
   }
@@ -51,5 +52,13 @@ class BooksForm extends React.Component {
     );
   }
 }
+
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = dispatch => ({
+  createBook: book => dispatch(createBook(book)),
+});
 
 export default BooksForm;
