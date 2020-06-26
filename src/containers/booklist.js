@@ -4,6 +4,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/book';
+import { removeBook } from '../actions/index'
 
 class BooksList extends React.Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class BooksList extends React.Component {
         </thead>
         <tbody>
           { books.map(book => (
-            <Book key={book.id} book={book}  removeBook={() => this.handleDelete}/>
+            <Book key={book.id} book={book}  removeBook={() => this.handleDelete(book)}/>
           ))}
         </tbody>
       </table>
@@ -39,8 +40,12 @@ class BooksList extends React.Component {
 
 const mapStateToProps = state => ({ books: state.books });
 
+const mapDispatchToProps = dispatch => ({
+  removeBook: book => dispatch(removeBook(book)),
+});
+
 BooksList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
 };
 
-export default connect(mapStateToProps, null)(BooksList);
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
