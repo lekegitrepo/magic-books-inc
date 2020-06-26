@@ -4,7 +4,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/book';
-import { removeBook } from '../actions/index'
+import { removeBook } from '../actions/index';
 
 class BooksList extends React.Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class BooksList extends React.Component {
         </thead>
         <tbody>
           { books.map(book => (
-            <Book key={book.id} book={book}  removeBook={() => this.handleDelete(book)}/>
+            <Book key={book.id} book={book} removeBook={() => this.handleDelete(book)} />
           ))}
         </tbody>
       </table>
