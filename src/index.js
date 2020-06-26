@@ -35,6 +35,11 @@ const INITIALSTATE = {
       title: 'There was a Country',
       category: 'History',
     },
+    {
+      id: v4(),
+      title: 'Success is a Journey',
+      category: 'Learning',
+    },
   ],
 };
 
