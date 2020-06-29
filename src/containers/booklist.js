@@ -9,10 +9,10 @@ import { removeBook } from '../actions/index';
 class BooksList extends React.Component {
   constructor(props) {
     super(props);
-    this.handleDelete = this.handleDelete.bind(this);
+    this.handleRemoveBook = this.handleRemoveBook.bind(this);
   }
 
-  handleDelete(book) {
+  handleRemoveBook(book) {
     const { removeBook } = this.props;
     removeBook(book);
   }
@@ -30,7 +30,7 @@ class BooksList extends React.Component {
         </thead>
         <tbody>
           { books.map(book => (
-            <Book key={book.id} book={book} removeBook={() => this.handleDelete(book)} />
+            <Book key={book.id} book={book} removeBook={() => this.handleRemoveBook(book)} />
           ))}
         </tbody>
       </table>
