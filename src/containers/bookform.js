@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import CATEGORIES from '../categories';
 import { createBook } from '../actions/index';
 
 class BooksForm extends React.Component {
@@ -28,15 +29,6 @@ class BooksForm extends React.Component {
   }
 
   render() {
-    const CATEGORIES = [
-      'Action',
-      'Biography',
-      'History',
-      'Horror',
-      'Kids',
-      'Learning',
-      'Sci-Fi',
-    ];
 
     const { title, category } = this.state;
     return (
