@@ -1,7 +1,6 @@
- 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import bookCategories from '../utils';
+import CATEGORIES from '../categories';
 
 class CategoryFilter extends Component {
   constructor(props) {
@@ -18,7 +17,7 @@ class CategoryFilter extends Component {
   };
 
   render() {
-    const mergedFilters = ['All', ...bookCategories];
+    const mergedFilters = ['All', ...CATEGORIES];
     const { filter } = this.state;
     return (
       <div>
