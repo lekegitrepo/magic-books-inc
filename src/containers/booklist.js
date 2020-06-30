@@ -18,7 +18,7 @@ class BooksList extends React.Component {
     removeBook(book);
   }
 
-  handleFilterChange = filter => {
+  handleFilterChange(filter) {
     const { changeFilter } = this.props;
     changeFilter(filter);
   };

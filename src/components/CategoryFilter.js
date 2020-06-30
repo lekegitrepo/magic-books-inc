@@ -10,7 +10,7 @@ class CategoryFilter extends Component {
     };
   }
 
-  handleChangeFilter = ({ target }) => {
+  handleChangeFilter(target) {
     const { changeFilter } = this.props;
     changeFilter(target.value);
     this.setState({ filter: target.value });

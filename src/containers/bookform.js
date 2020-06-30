@@ -29,7 +29,6 @@ class BooksForm extends React.Component {
   }
 
   render() {
-
     const { title, category } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
