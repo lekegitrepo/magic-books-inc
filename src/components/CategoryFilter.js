@@ -14,7 +14,7 @@ class CategoryFilter extends Component {
     const { changeFilter } = this.props;
     changeFilter(target.value);
     this.setState({ filter: target.value });
-  };
+  }
 
   render() {
     const mergedFilters = ['All', ...CATEGORIES];
