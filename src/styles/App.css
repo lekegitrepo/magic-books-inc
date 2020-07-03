@@ -1,3 +1,7 @@
 h4 {
   font-size: 20px;
 }
+
+.header {
+  display: flex;
+}

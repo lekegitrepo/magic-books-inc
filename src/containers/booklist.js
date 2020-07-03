@@ -35,7 +35,11 @@ class BooksList extends React.Component {
 
     return (
       <div>
-        <CategoryFilter changeFilter={this.handleFilterChange} />
+        <div className="header">
+          <h1 className="main-title">Bookstore CMS</h1>
+          <button className="btn-books">Books</button>
+          <CategoryFilter changeFilter={this.handleFilterChange} />
+        </div>
         <table>
           <thead>
             <tr>
