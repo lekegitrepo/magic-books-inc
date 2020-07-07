@@ -40,20 +40,27 @@ class BooksList extends React.Component {
           <button className="btn-books">Books</button>
           <CategoryFilter changeFilter={this.handleFilterChange} />
         </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Book ID</th>
-              <th>Title</th>
-              <th>category</th>
-            </tr>
-          </thead>
-          <tbody>
+        <div className="book-list">
+          <div className="book-details">
             { booksFilter.map(book => (
               <Book key={book.id} book={book} removeBook={() => this.handleRemoveBook(book)} />
             ))}
-          </tbody>
-        </table>
+          </div>
+          <div>
+            <div>
+              progress icon
+            </div>
+            <div>
+              <h3>9%</h3>
+              <span>Completed</span>
+            </div>
+          </div>
+          <div>
+            <h6>CURRENT CHAPTER</h6>
+            <h4> Chapter 19</h4>
+            <button>UPDATE PROGRESS</button>
+          </div>
+        </div>
       </div>
     );
   }
