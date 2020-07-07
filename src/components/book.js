@@ -15,17 +15,15 @@ const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
         <button className="btn btn-edit" type="submit" onClick={editBook}>Edit</button>
       </div>
     </div>
-    <div>
-      <div>
-        <img src="" />
-        <h3>9%</h3>
-        <span>Completed</span>
-      </div>
+    <div className="reading-status">
+      <img src="" />
+      <h3>9%</h3>
+      <span>Completed</span>
     </div>
-    <div>
+    <div className="book-progress">
       <h6>CURRENT CHAPTER</h6>
       <h4> Chapter 19</h4>
-      <button>UPDATE PROGRESS</button>
+      <button className="btn btn-update">UPDATE PROGRESS</button>
     </div>
   </div>
 );
