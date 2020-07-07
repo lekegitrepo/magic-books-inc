@@ -1,6 +1,7 @@
 .book-store {
   margin: auto 35px;
 }
+
 .book {
   background-color: #fff;
   border-radius: 10px;
@@ -10,4 +11,15 @@
   justify-content: space-between;
   margin-bottom: 15px;
   padding: 10px;
+}
+
+.btn-book .btn {
+  border: none;
+  color: #33ee;
+  margin: 5px;
+}
+
+.btn-book .btn:hover, .btn-book .btn:focus {
+  cursor: pointer;
+  outline: none;
 }

@@ -4,15 +4,15 @@ import '../styles/book.css';
 
 const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
   <div className="book">
-    <div>
-      <div>
+    <div className="book-detail">
+      <div className="book-info">
         <h6>{ category }</h6>
         <h3>{ title }</h3>
         <span>author</span>
       </div>
-      <div>
-        <button type="submit" onClick={removeBook}>Delete</button>
-        <button type="submit" onClick={editBook}>Edit</button>
+      <div className="btn-book">
+        <button className="btn btn-del" type="submit" onClick={removeBook}>Delete</button>
+        <button className="btn btn-edit" type="submit" onClick={editBook}>Edit</button>
       </div>
     </div>
     <div>
