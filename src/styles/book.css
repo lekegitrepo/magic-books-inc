@@ -1,4 +1,13 @@
+.book-store {
+  margin: auto 35px;
+}
 .book {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid grey;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
 }

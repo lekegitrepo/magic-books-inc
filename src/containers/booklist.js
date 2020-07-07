@@ -34,7 +34,7 @@ class BooksList extends React.Component {
     }
 
     return (
-      <div>
+      <div className="book-store">
         <div className="header">
           <h1 className="main-title">Bookstore CMS</h1>
           <button className="btn-books">Books</button>
