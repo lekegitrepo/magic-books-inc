@@ -64,6 +64,15 @@
   color: #4386bf;
 }
 
+.oval {
+  width: 68px;
+  height: 68px;
+  border-style: solid;
+  border-width: 5px;
+  border-image-source: linear-gradient(to bottom, #307bbe, #379cf6);
+  border-image-slice: 1;
+}
+
 .percent {
   width: 68px;
   height: 39px;
