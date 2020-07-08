@@ -6,8 +6,8 @@ const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
   <div className="book">
     <div className="book-detail">
       <div className="book-info">
-        <h6>{ category }</h6>
-        <h3>{ title }</h3>
+        <h6 className="category">{ category }</h6>
+        <h3 className="title">{ title }</h3>
         <span>author</span>
       </div>
       <div className="btn-book">
@@ -17,12 +17,12 @@ const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
     </div>
     <div className="reading-status">
       <img src="" />
-      <h3>9%</h3>
-      <span>Completed</span>
+      <h3 className="percent">9%</h3>
+      <span className="completed">Completed</span>
     </div>
     <div className="book-progress">
-      <h6>CURRENT CHAPTER</h6>
-      <h4> Chapter 19</h4>
+      <h6 className="current-chapter">CURRENT CHAPTER</h6>
+      <h4 className="chapter"> Chapter 19</h4>
       <button className="btn btn-update">UPDATE PROGRESS</button>
     </div>
   </div>
