@@ -1,5 +1,7 @@
 .book-store {
-  margin: auto 35px;
+  border-bottom: 1px solid #e8e8e8;
+  margin: auto 35px 25px;
+  padding-bottom: 20px;
 }
 
 .book {
