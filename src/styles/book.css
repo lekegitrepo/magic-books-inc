@@ -16,8 +16,38 @@
 .book-header {
   align-items: center;
   display: flex;
-  justify-content: space-between;
   width: 65%;
+}
+
+.main-title {
+  width: 240px;
+  height: 37px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+  margin-right: 2%;
+}
+
+.btn-books {
+  background-color: #ffffff;
+  border: none;
+  margin-right: 8%;
+}
+
+.filter {
+  background-color: #ffffff;
+  border: none;
+  height: 30px;
+  width: 125px;
+}
+
+.filter:focus {
+  outline: none;
 }
 
 .user-img {

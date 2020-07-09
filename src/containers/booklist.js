@@ -39,7 +39,7 @@ class BooksList extends React.Component {
         <div className="header">
           <div className="book-header">
             <h1 className="main-title">Bookstore CMS</h1>
-            <button className="btn-books">Books</button>
+            <button className="btn-books">BOOKS</button>
             <CategoryFilter changeFilter={this.handleFilterChange} />
           </div>
           <div className="user-img">

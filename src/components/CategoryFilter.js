@@ -22,8 +22,7 @@ class CategoryFilter extends React.Component {
     const { filter } = this.state;
     return (
       <div>
-        CATEGORIES:
-        <select onChange={this.handleChangeFilter} value={filter} name="filter">
+        <select className="filter" onChange={this.handleChangeFilter} value={filter} name="filter">
           {mergedFilters.map(val => (
             <option key={val} value={val}>
               {val}
