@@ -1,6 +1,10 @@
+.App {
+  margin: auto 35px 25px;
+}
+
 .book-store {
   border-bottom: 1px solid #e8e8e8;
-  margin: auto 35px 25px;
+  margin-bottom: 25px;
   padding-bottom: 20px;
 }
 
@@ -152,4 +156,34 @@
   line-height: normal;
   letter-spacing: -0.18px;
   color: #888888;
+}
+
+.form-input {
+  width: 44%;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.form-category {
+  width: 35%;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.btn-add {
+  width: 184px;
+  height: 45px;
+  border-radius: 3px;
+  border: none;
+  background-color: #0290ff;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
 }
