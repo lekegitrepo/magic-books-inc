@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/book';
 import CategoryFilter from '../components/CategoryFilter';
 import { removeBook, changeFilter } from '../actions/index';
+import image from '../images/avatar.png';
 
 class BooksList extends React.Component {
   constructor(props) {
@@ -36,9 +37,14 @@ class BooksList extends React.Component {
     return (
       <div className="book-store">
         <div className="header">
-          <h1 className="main-title">Bookstore CMS</h1>
-          <button className="btn-books">Books</button>
-          <CategoryFilter changeFilter={this.handleFilterChange} />
+          <div className="book-header">
+            <h1 className="main-title">Bookstore CMS</h1>
+            <button className="btn-books">Books</button>
+            <CategoryFilter changeFilter={this.handleFilterChange} />
+          </div>
+          <div className="user-img">
+            <img className="avatar" src={ image } />
+          </div>
         </div>
           <div className="book-list">
             { booksFilter.map(book => (

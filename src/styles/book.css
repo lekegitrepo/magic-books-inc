@@ -8,6 +8,28 @@
   padding-bottom: 20px;
 }
 
+.header {
+  display: flex;
+  margin-top: 20px;
+}
+
+.book-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.user-img {
+  display: flex;
+  justify-content: flex-end;
+  width: 35%;
+}
+.avatar {
+  height: 50px;
+  width: 80px;
+}
+
 .book {
   background-color: #fff;
   border-radius: 10px;
