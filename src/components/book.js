@@ -8,11 +8,11 @@ const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
       <div className="book-info">
         <h6 className="category">{ category }</h6>
         <h3 className="title">{ title }</h3>
-        <span>author</span>
+        <span className="author">author</span>
       </div>
       <div className="btn-book">
-        <button className="btn btn-del" type="submit" onClick={removeBook}>Delete</button>
-        <button className="btn btn-edit" type="submit" onClick={editBook}>Edit</button>
+        <span className="btn btn-del" onClick={removeBook}>Delete</span>
+        <button className="btn btn-edit" onClick={editBook}>Edit</button>
       </div>
     </div>
     <div className="reading-status">
