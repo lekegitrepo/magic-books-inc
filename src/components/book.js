@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/book.css';
+import '../styles/circle.css';
 
 const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
   <div className="book">
@@ -16,15 +17,16 @@ const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
       </div>
     </div>
     <div className="reading-status">
-      <div className="c100 p25">
-        <span>25%</span>
+      <div className="c100 p65">
         <div className="slice">
           <div className="bar"></div>
           <div className="fill"></div>
         </div>
       </div>
-      <h3 className="percent">9%</h3>
-      <span className="completed">Completed</span>
+      <div>
+        <h3 className="percent">9%</h3>
+        <span className="completed">Completed</span>
+      </div>
     </div>
     <div className="book-progress">
       <h6 className="current-chapter">CURRENT CHAPTER</h6>
