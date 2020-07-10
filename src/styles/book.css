@@ -61,10 +61,6 @@
   justify-content: flex-end;
   width: 35%;
 }
-.avatar {
-  height: 50px;
-  width: 80px;
-}
 
 .book-container {
   background-color: #f7f7f7;

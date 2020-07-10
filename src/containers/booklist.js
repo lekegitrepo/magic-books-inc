@@ -43,7 +43,7 @@ class BooksList extends React.Component {
             <CategoryFilter changeFilter={this.handleFilterChange} />
           </div>
           <div className="user-img">
-            <img className="avatar" src={ image } alt="user avatar"/>
+            <img src={ image } alt="user avatar"/>
           </div>
         </div>
           <div className="book-container">
