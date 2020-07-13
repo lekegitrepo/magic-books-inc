@@ -3,24 +3,25 @@ import PropTypes from 'prop-types';
 import '../styles/book.css';
 import '../styles/circle.css';
 
-const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
+const Book = ({ book: { id, title, category }, removeBook, editBook = f => f }) => (
   <div className="book content">
     <div className="book-detail">
       <div className="book-info font-r-slab">
+        <span className="hidden">{ id }</span>
         <h6 className="category font-monts">{ category }</h6>
         <h3 className="title">{ title }</h3>
         <span className="author font-w-300">author</span>
       </div>
       <div className="btn-book font-r-slab font-w-300">
-        <span className="btn btn-del" onClick={removeBook}>Delete</span>
-        <button className="btn btn-edit" onClick={editBook}>Edit</button>
+        <button className="btn btn-del" onClick={removeBook}>Delete</button>
+        <button type="submit" className="btn btn-edit" onClick={editBook}>Edit</button>
       </div>
     </div>
     <div className="reading-status">
       <div className="c100 p65">
         <div className="slice">
-          <div className="bar"></div>
-          <div className="fill"></div>
+          <div className="bar" />
+          <div className="fill" />
         </div>
       </div>
       <div className="book-status font-monts">
@@ -43,7 +44,7 @@ Book.propTypes = {
     category: PropTypes.string.isRequired,
   }).isRequired,
   removeBook: PropTypes.func.isRequired,
-  editBook: PropTypes.func,
+  editBook: PropTypes.func.isRequired,
 };
 
 export default Book;

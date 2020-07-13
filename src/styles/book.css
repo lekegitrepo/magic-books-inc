@@ -127,6 +127,10 @@
   margin-right: 5px;
 }
 
+.btn-del {
+  text-align: left;
+}
+
 .btn-book .btn:hover, .btn-book .btn:focus {
   cursor: pointer;
   outline: none;
@@ -134,6 +138,10 @@
 
 .book-info {
   margin-bottom: 20px;
+}
+
+.book-info .hidden {
+  display: none;
 }
 
 .font-w-300 {

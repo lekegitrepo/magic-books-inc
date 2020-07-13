@@ -39,11 +39,11 @@ class BooksList extends React.Component {
         <div className="header">
           <div className="book-header">
             <h1 className="main-title font-monts">Bookstore CMS</h1>
-            <button className="btn-books btn-white">BOOKS</button>
+            <button type="submit" className="btn-books btn-white">BOOKS</button>
             <CategoryFilter changeFilter={this.handleFilterChange} />
           </div>
           <div className="user-img">
-            <img src={ image } alt="user avatar"/>
+            <img src={image} alt="user avatar"/>
           </div>
         </div>
           <div className="book-container">
