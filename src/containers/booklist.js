@@ -43,16 +43,16 @@ class BooksList extends React.Component {
             <CategoryFilter changeFilter={this.handleFilterChange} />
           </div>
           <div className="user-img">
-            <img src={image} alt="user avatar"/>
+            <img src={image} alt="user avatar" />
           </div>
         </div>
-          <div className="book-container">
-            <div className="book-list">
-              { booksFilter.map(book => (
-                <Book key={book.id} book={book} removeBook={() => this.handleRemoveBook(book)} />
-              ))}
-            </div>
+        <div className="book-container">
+          <div className="book-list">
+            { booksFilter.map(book => (
+              <Book key={book.id} book={book} removeBook={() => this.handleRemoveBook(book)} />
+            ))}
           </div>
+        </div>
       </div>
     );
   }

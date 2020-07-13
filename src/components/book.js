@@ -13,7 +13,7 @@ const Book = ({ book: { id, title, category }, removeBook, editBook = f => f }) 
         <span className="author font-w-300">author</span>
       </div>
       <div className="btn-book font-r-slab font-w-300">
-        <button className="btn btn-del" onClick={removeBook}>Delete</button>
+        <button type="submit" className="btn btn-del" onClick={removeBook}>Delete</button>
         <button type="submit" className="btn btn-edit" onClick={editBook}>Edit</button>
       </div>
     </div>
@@ -32,7 +32,7 @@ const Book = ({ book: { id, title, category }, removeBook, editBook = f => f }) 
     <div className="book-progress font-r-slab">
       <h6 className="current-chapter font-w-300">CURRENT CHAPTER</h6>
       <h4 className="chapter font-w-300"> Chapter 19</h4>
-      <button className="btn btn-update font-w-b btn-blue">UPDATE PROGRESS</button>
+      <button type="submit" className="btn btn-update font-w-b btn-blue">UPDATE PROGRESS</button>
     </div>
   </div>
 );
