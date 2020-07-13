@@ -6,12 +6,12 @@ import '../styles/circle.css';
 const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
   <div className="book">
     <div className="book-detail">
-      <div className="book-info">
+      <div className="book-info font-r-slab">
         <h6 className="category">{ category }</h6>
         <h3 className="title">{ title }</h3>
         <span className="author">author</span>
       </div>
-      <div className="btn-book">
+      <div className="btn-book font-r-slab">
         <span className="btn btn-del" onClick={removeBook}>Delete</span>
         <button className="btn btn-edit" onClick={editBook}>Edit</button>
       </div>

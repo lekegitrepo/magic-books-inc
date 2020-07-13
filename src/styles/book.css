@@ -9,6 +9,11 @@
 }
 
 .book-store {
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: normal;
   margin-bottom: 25px;
 }
 
@@ -30,11 +35,6 @@
   height: 37px;
   font-family: Montserrat;
   font-size: 30px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #0290ff;
   margin-right: 2%;
 }
@@ -92,22 +92,16 @@
   opacity: 0.5;
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
+}
+
+.font-r-slab {
+  font-family: RobotoSlab;
 }
 
 .title {
   height: 29px;
-  font-family: RobotoSlab;
   font-size: 22px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
 }
@@ -134,13 +128,8 @@
   background-color: #fff;
   width: 107px;
   height: 19px;
-  font-family: RobotoSlab;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #4386bf;
 }
 
@@ -159,10 +148,6 @@
   font-family: Montserrat;
   font-size: 32px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
@@ -173,10 +158,6 @@
   font-family: Montserrat;
   font-size: 14px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
@@ -187,10 +168,6 @@
   font-family: RobotoSlab;
   font-size: 13px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #121212;
 }
 
@@ -200,9 +177,6 @@
   font-family: RobotoSlab;
   font-size: 16px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
   color: #121212;
 }
@@ -233,9 +207,6 @@
   font-family: Montserrat;
   font-size: 20px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.18px;
   color: #888888;
 }
