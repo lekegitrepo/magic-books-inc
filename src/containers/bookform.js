@@ -31,18 +31,18 @@ class BooksForm extends React.Component {
   render() {
     const { title, category } = this.state;
     return (
-      <div className="form-container">
-        <h3 className="form-title">Add New Book</h3>
+      <div className="form-container font-monts">
+        <h3 className="form-title font-w-b">Add New Book</h3>
         <form onSubmit={this.handleSubmit}>
-          <input className="form-input" type="text" name="title" value={title} onChange={this.handleChange} placeholder="Name of the book" />
-          <select className="form-category" name="category" onChange={this.handleChange} value={category}>
+          <input className="form-input content" type="text" name="title" value={title} onChange={this.handleChange} placeholder="Name of the book" />
+          <select className="form-category content" name="category" onChange={this.handleChange} value={category}>
             {CATEGORIES.map(cat => (
               <option key={cat} value={cat}>
                 {cat}
               </option>
             ))}
           </select>
-          <button className="btn-add" type="submit">Add a Book</button>
+          <button className="btn-add font-w-b btn-blue" type="submit">Add a Book</button>
         </form>
       </div>
     );

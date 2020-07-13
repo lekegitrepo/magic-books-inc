@@ -5,16 +5,23 @@
 }
 
 .App {
-  margin-bottom: 25px;
+  margin-bottom: 60px;
+}
+
+.font-w-b {
+  font-weight: bold;
+}
+
+.font-w-n {
+  font-weight: normal;
 }
 
 .book-store {
   font-stretch: normal;
   font-style: normal;
-  font-weight: bold;
   line-height: normal;
   letter-spacing: normal;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .header {
@@ -33,7 +40,6 @@
 .main-title {
   width: 240px;
   height: 37px;
-  font-family: Montserrat;
   font-size: 30px;
   color: #0290ff;
   margin-right: 2%;
@@ -73,11 +79,14 @@
   padding-bottom: 20px;
 }
 
-.book {
-  align-items: center;
+.content {
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
+}
+
+.book {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,13 +99,16 @@
   width: 49px;
   height: 18px;
   opacity: 0.5;
-  font-family: Montserrat;
   font-size: 14px;
   color: #121212;
 }
 
 .font-r-slab {
   font-family: RobotoSlab;
+}
+
+.font-monts {
+  font-family: Montserrat;
 }
 
 .title {
@@ -124,12 +136,15 @@
   margin-bottom: 20px;
 }
 
+.font-w-300 {
+  font-weight: 300;
+}
+
 .book-info span, .btn-book .btn {
   background-color: #fff;
   width: 107px;
   height: 19px;
   font-size: 14px;
-  font-weight: 300;
   color: #4386bf;
 }
 
@@ -145,9 +160,7 @@
 .percent {
   width: 68px;
   height: 39px;
-  font-family: Montserrat;
   font-size: 32px;
-  font-weight: normal;
   color: #121212;
 }
 
@@ -155,9 +168,7 @@
   width: 80px;
   height: 18px;
   opacity: 0.5;
-  font-family: Montserrat;
   font-size: 14px;
-  font-weight: normal;
   color: #121212;
 }
 
@@ -165,18 +176,14 @@
   width: 126px;
   height: 18px;
   opacity: 0.5;
-  font-family: RobotoSlab;
   font-size: 13px;
-  font-weight: 300;
   color: #121212;
 }
 
 .chapter {
   width: 75px;
   height: 21px;
-  font-family: RobotoSlab;
   font-size: 16px;
-  font-weight: 300;
   letter-spacing: -0.4px;
   color: #121212;
 }
@@ -185,13 +192,15 @@
   margin-right: 40px;
 }
 
-.book-progress .btn {
+.btn-blue {
   background-color: #0290ff;
   border-radius: 3px;
   border: none;
-  color: #fff;
   cursor: pointer;
-  font-weight: bold;
+  color: #fff;
+}
+
+.book-progress .btn {
   padding: 8px;
   height: 33px;
   width: 184px;
@@ -204,9 +213,7 @@
 .form-title {
   width: 174px;
   height: 24px;
-  font-family: Montserrat;
   font-size: 20px;
-  font-weight: bold;
   letter-spacing: -0.18px;
   color: #888888;
 }
@@ -214,29 +221,17 @@
 .form-input {
   width: 44%;
   height: 45px;
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  background-color: #ffffff;
   margin-right: 10px;
 }
 
 .form-category {
   width: 35%;
   height: 45px;
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  background-color: #ffffff;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .btn-add {
   width: 184px;
   height: 45px;
-  border-radius: 3px;
-  border: none;
-  background-color: #0290ff;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;
   text-transform: uppercase;
 }

@@ -4,14 +4,14 @@ import '../styles/book.css';
 import '../styles/circle.css';
 
 const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
-  <div className="book">
+  <div className="book content">
     <div className="book-detail">
       <div className="book-info font-r-slab">
-        <h6 className="category">{ category }</h6>
+        <h6 className="category font-monts">{ category }</h6>
         <h3 className="title">{ title }</h3>
-        <span className="author">author</span>
+        <span className="author font-w-300">author</span>
       </div>
-      <div className="btn-book font-r-slab">
+      <div className="btn-book font-r-slab font-w-300">
         <span className="btn btn-del" onClick={removeBook}>Delete</span>
         <button className="btn btn-edit" onClick={editBook}>Edit</button>
       </div>
@@ -23,15 +23,15 @@ const Book = ({ book: { id, title, category }, removeBook, editBook=f=>f }) => (
           <div className="fill"></div>
         </div>
       </div>
-      <div>
-        <h3 className="percent">9%</h3>
-        <span className="completed">Completed</span>
+      <div className="book-status font-monts">
+        <h3 className="percent font-w-n">9%</h3>
+        <span className="completed font-w-n">Completed</span>
       </div>
     </div>
-    <div className="book-progress">
-      <h6 className="current-chapter">CURRENT CHAPTER</h6>
-      <h4 className="chapter"> Chapter 19</h4>
-      <button className="btn btn-update">UPDATE PROGRESS</button>
+    <div className="book-progress font-r-slab">
+      <h6 className="current-chapter font-w-300">CURRENT CHAPTER</h6>
+      <h4 className="chapter font-w-300"> Chapter 19</h4>
+      <button className="btn btn-update font-w-b btn-blue">UPDATE PROGRESS</button>
     </div>
   </div>
 );

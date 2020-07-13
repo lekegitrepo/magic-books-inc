@@ -35,11 +35,11 @@ class BooksList extends React.Component {
     }
 
     return (
-      <div className="book-store">
+      <div className="book-store font-w-b">
         <div className="header">
           <div className="book-header">
-            <h1 className="main-title">Bookstore CMS</h1>
-            <button className="btn-books">BOOKS</button>
+            <h1 className="main-title font-monts">Bookstore CMS</h1>
+            <button className="btn-books btn-white">BOOKS</button>
             <CategoryFilter changeFilter={this.handleFilterChange} />
           </div>
           <div className="user-img">
