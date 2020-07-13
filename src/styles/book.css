@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Roboto+Slab:wght@100;200;300;400&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -131,7 +133,24 @@
   text-align: left;
 }
 
-.btn-book .btn:hover, .btn-book .btn:focus {
+.book-progress .btn {
+  padding: 8px;
+  height: 33px;
+  width: 184px;
+  margin-top: 25px;
+}
+
+.book-info span,
+.btn-book .btn {
+  background-color: #fff;
+  width: 107px;
+  height: 19px;
+  font-size: 14px;
+  color: #4386bf;
+}
+
+.btn-book .btn:hover,
+.btn-book .btn:focus {
   cursor: pointer;
   outline: none;
 }
@@ -146,14 +165,6 @@
 
 .font-w-300 {
   font-weight: 300;
-}
-
-.book-info span, .btn-book .btn {
-  background-color: #fff;
-  width: 107px;
-  height: 19px;
-  font-size: 14px;
-  color: #4386bf;
 }
 
 .author {
@@ -208,16 +219,10 @@
   color: #fff;
 }
 
-.book-progress .btn {
-  padding: 8px;
-  height: 33px;
-  width: 184px;
-  margin-top:25px;
-}
-
 .form-container {
   margin: auto 35px;
 }
+
 .form-title {
   width: 174px;
   height: 24px;
